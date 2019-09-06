@@ -1,5 +1,5 @@
 {
-  "name": "flockos-ui-components",
+  "name": "flock-ui-components",
   "author": "Divyam Rastogi",
   "version": "0.1.73",
   "license": "ISC",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/ezlo-anatoliiv/flock-ui-components/issues"
   },
-  "main": "./dist/flock-ui-components.common.js",
+  "main": "./dist/flock-ui-components.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib ./src/index.js",
