@@ -3,11 +3,18 @@
   "author": "Divyam Rastogi",
   "version": "0.1.73",
   "license": "ISC",
+  "description": "## How to use: 1. Just use `npm install --save @flockos/vue-components` 2. Use the components in your file directly.",
   "keywords": [
     "vue",
     "components"
   ],
-  "description": "## How to use: 1. Just use `npm install --save @flockos/vue-components` 2. Use the components in your file directly.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezlo-anatoliiv/flock-ui-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ezlo-anatoliiv/flock-ui-components/issues"
+  },
   "main": "./dist/flock-ui-components.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -32,17 +39,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {
-    "pre-push": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "pre-push": "npm run lint"
   },
   "files": [
     "dist/*",
